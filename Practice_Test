@@ -24,7 +24,7 @@
              语法：INSERT INTO 表名 VALUES ( 值 [ , 值 ... ] )
              例：INSERT INTO TEST_TABLE VALUES ( abc , 123 , abc123 );
            5.查询数据(条件语法只需支持 等于[=]、不等于[!=]、并且[AND])
-             语法：SELECT 字段名 [ , 字段名 ... ] FROM 表名 WHERE 字段名 [ = | != ] 值 [AND 字段名 [ = | != ] 值 ... ]
+             语法：SELECT 字段名 [ , 字段名 ... ] FROM 表名 WHERE 字段名 [ = | != ] 值 [ AND 字段名 [ = | != ] 值 ... ]
              例：SELECT Test1 , Test2 FROM TEST_TABLE WHERE Test3 = abc123;
            6.删除数据
              语法：DELETE FROM 表名 WHERE 字段名 [ = | != ] 值 [AND 字段名 [ = | != ] 值 ... ]

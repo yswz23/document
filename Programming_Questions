@@ -18,6 +18,7 @@ Sample Input 4: "abc123" 6 "abc1234" 7
 Sample Output 4: -1
 
 解答例：
+伪代码：
 function IndexOf (S1, length1, S2, length2)
 begin
   if length1 < length2 then

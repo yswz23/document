@@ -1,1 +1,42 @@
+使用伪代码或任意编程语言写出满足题目要求的函数。使用特定编程语言请注明。使用伪代码可以不用遵循任何语法标准，易于理解即可。
+题目要求的output形式可以是标准输出或函数返回值。
 
+------------------------------------------------------------------------------------------------------
+例题：实现IndexOf函数，输出字符串S2在字符串S1中首次出现的位置。位置从0开始计算，如果S1不包含S2，则输出-1。
+
+input: S1 length1 S2 length2
+  length1为S1的长度，length2为S2的长度。
+output: 字符串S2在字符串S1中首次出现的位置
+
+Sample Input 1: "abcdefg" 7 "de" 2
+Sample Output 1: 3
+Sample Input 2: "abc123" 6 "c12" 3
+Sample Output 2: 2
+Sample Input 3: "abc123" 6 "1c" 2
+Sample Output 3: -1
+Sample Input 4: "abc123" 6 "abc1234" 7
+Sample Output 4: -1
+
+解答例：
+function IndexOf (S1, length1, S2, length2)
+begin
+  if length1 < length2 then
+    print -1
+    return
+  endif
+  for i ← 0 to (length1 - length2) do
+    contains ← true
+    for j ← 0 to (length2 - 1) do
+      if S1[i + j] <> S2[j] then
+        contains ← false
+        break
+      endif
+    done
+    if contains = true then
+      print i
+      return
+    endif
+  done
+  print -1
+end
+------------------------------------------------------------------------------------------------------

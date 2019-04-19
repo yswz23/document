@@ -5,3 +5,5 @@
 3.一个C++项目组需要你来定制一套开发规约，为了使程序尽量避免出现内存泄露（memory leak）的bug，你会应该定下哪些约定（从编程角度）。
 
 4.在什么情况下需要给一个C++的class加上virtual destructor？
+
+5.完成函数bool isBigEndian();该函数返回执行环境的字节存储机制是否是大端字节顺序（big-endian）。是则返回true，否则返回false。  

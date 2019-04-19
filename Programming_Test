@@ -4,18 +4,16 @@
 ------------------------------------------------------------------------------------------------------
 例题：实现IndexOf函数，输出字符串S2在字符串S1中首次出现的位置。位置从0开始计算，如果S1不包含S2，则输出-1。
 
-input: S1 length1 S2 length2
+input: S1, length1, S2, length2
   length1为S1的长度，length2为S2的长度。
 output: 字符串S2在字符串S1中首次出现的位置
 
-Sample Input 1: "abcdefg" 7 "de" 2
+Sample Input 1: "abcdefg", 7, "de", 2
 Sample Output 1: 3
-Sample Input 2: "abc123" 6 "c12" 3
-Sample Output 2: 2
-Sample Input 3: "abc123" 6 "1c" 2
+Sample Input 2: "abc123", 6, "1c", 2
+Sample Output 2: -1
+Sample Input 3: "abc123", 6, "abc1234", 7
 Sample Output 3: -1
-Sample Input 4: "abc123" 6 "abc1234" 7
-Sample Output 4: -1
 
 解答例：
 伪代码：

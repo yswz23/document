@@ -7,3 +7,4 @@
 4.在什么情况下需要给一个C++的class加上virtual destructor？
 
 5.完成函数bool isBigEndian();该函数返回执行环境的字节存储机制是否是大端字节顺序（big-endian）。是则返回true，否则返回false。  
+  提示："大端"是指数据的高字节保存在内存的低地址中,低字节保存在内存的高地址中。
